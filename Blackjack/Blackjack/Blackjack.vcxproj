@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.h" />
+    <ClInclude Include="Deck.h" />
     <ClInclude Include="GenericPlayer.h" />
     <ClInclude Include="Hand.h" />
     <ClInclude Include="House.h" />
