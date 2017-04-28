@@ -154,6 +154,7 @@
   <ItemGroup>
     <ClCompile Include="Blackjack.cpp" />
     <ClCompile Include="Card.cpp" />
+    <ClCompile Include="Deck.cpp" />
     <ClCompile Include="GenericPlayer.cpp" />
     <ClCompile Include="Hand.cpp" />
     <ClCompile Include="House.cpp" />
