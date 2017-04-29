@@ -64,9 +64,9 @@ void Game::Play()
 		{
 			if (pPlayer->GetTotal() > m_House.GetTotal())
 				pPlayer->Win();
-			else if (pPlayer->GetTotal() < m_House.GetTotal())
+			if (pPlayer->GetTotal() < m_House.GetTotal())
 				pPlayer->Lose();
-			else
+			if (pPlayer->GetTotal() == m_House.GetTotal())
 				pPlayer->Push();
 		}
 	}

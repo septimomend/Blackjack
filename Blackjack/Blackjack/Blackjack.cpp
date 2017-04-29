@@ -2,6 +2,7 @@
 //
 
 #include "stdafx.h"
+#include <fstream>
 #include "Game.h"
 
 using namespace std;
@@ -12,6 +13,20 @@ ostream& operator<<(ostream& os, const GenericPlayer& aGenericPlayer);
 int main()
 {
 	cout << "\t\tBlackjack Console Game\n" << endl;
+	cout << "For reading rules press 'r' else press any other button: ";
+	char rules;
+	cin >> rules;
+	if (rules == 'r')
+	{
+		ifstream readme("rules.txt");
+		string ruleStr;
+		while (readme)
+		{
+			readme >> ruleStr;
+			cout << ruleStr << " ";
+		}
+		cout << endl;
+	}
 	int numPlayers = 0;
 	while (numPlayers < 1 || numPlayers > 7)
 	{
@@ -30,13 +45,14 @@ int main()
 	}
 	cout << endl;
 	// cycle of game
+	//
 	Game aGame(names);
 	char again = 'y';
 	while (again != 'n' && again != 'N')
 	{
 		system("cls");
 		aGame.Play();
-		cout << "/nDo you want to play again& (Y/N): ";
+		cout << "\nDo you want to play again? (Y/N): ";
 		cin >> again;
 	}
 	cout << "Good luck!" << endl;
