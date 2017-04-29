@@ -20,9 +20,9 @@ int main()
 	}
 	vector<string> names;
 	string name;
+	int number = 1;
 	for (int i = 0; i < numPlayers; ++i)
 	{
-		int number = 1;
 		cout << "Enter player number " << number << " name: ";
 		cin >> name;
 		names.push_back(name);
