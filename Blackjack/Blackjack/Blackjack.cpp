@@ -22,9 +22,11 @@ int main()
 	string name;
 	for (int i = 0; i < numPlayers; ++i)
 	{
-		cout << "Enter player number " << i << " name: ";
+		int number = 1;
+		cout << "Enter player number " << number << " name: ";
 		cin >> name;
 		names.push_back(name);
+		number++;
 	}
 	cout << endl;
 	// cycle of game
