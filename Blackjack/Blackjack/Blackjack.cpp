@@ -12,7 +12,7 @@ ostream& operator<<(ostream& os, const GenericPlayer& aGenericPlayer);
 
 int main()
 {
-	cout << "\t\tBlackjack Console Game\n" << endl;
+	cout << "\t\t\3\4 Blackjack Console Game \5\6\n" << endl;
 	cout << "For reading rules press 'r' else press any other button: ";
 	char rules;
 	cin >> rules;

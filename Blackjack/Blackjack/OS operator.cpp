@@ -8,7 +8,7 @@ using namespace std;
 ostream& operator<<(ostream& os, const Card& aCard)
 {
 	const string RANKS[] = { "0", "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" }; // first is 0 because rank begins from 1
-	const string SUIT[] = { "c", "d", "h", "s" };
+	const string SUIT[] = { "\5", "\4", "\3", "\6" };
 	if (aCard.m_IsFaceUp)
 		os << RANKS[aCard.m_Rank] << SUIT[aCard.m_Suit];
 	else
