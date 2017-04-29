@@ -160,6 +160,7 @@
     <ClCompile Include="GenericPlayer.cpp" />
     <ClCompile Include="Hand.cpp" />
     <ClCompile Include="House.cpp" />
+    <ClCompile Include="OS operator.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
