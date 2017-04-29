@@ -1,4 +1,5 @@
 // GenericPlayer.cpp >> declaration of class defined in GenericPlayer.h
+#include "stdafx.h"
 #include "GenericPlayer.h"
 
 using namespace std;

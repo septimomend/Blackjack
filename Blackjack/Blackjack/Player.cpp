@@ -1,4 +1,5 @@
 // Player.cpp >> definition of class Player defined in Player.h
+#include "stdafx.h"
 #include "Player.h"
 
 using namespace std;

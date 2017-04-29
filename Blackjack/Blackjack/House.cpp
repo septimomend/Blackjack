@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "House.h"
 
 using namespace std;

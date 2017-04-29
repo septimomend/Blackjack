@@ -1,0 +1,48 @@
+﻿  Game.cpp
+c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(32): error C3867: 'std::vector<Player,std::allocator<_Ty>>::begin': non-standard syntax; use '&' to create a pointer to member
+          with
+          [
+              _Ty=Player
+          ]
+c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(32): error C2679: binary '=': no operator found which takes a right-hand operand of type 'overloaded-function' (or there is no acceptable conversion)
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(397): note: could be 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>::operator =(std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &&)'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(397): note: or       'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>::operator =(const std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &)'
+  c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(32): note: while trying to match the argument list '(std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>, overloaded-function)'
+c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(39): error C3867: 'std::vector<Player,std::allocator<_Ty>>::begin': non-standard syntax; use '&' to create a pointer to member
+          with
+          [
+              _Ty=Player
+          ]
+c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(39): error C2679: binary '=': no operator found which takes a right-hand operand of type 'overloaded-function' (or there is no acceptable conversion)
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(397): note: could be 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>::operator =(std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &&)'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(397): note: or       'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>::operator =(const std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &)'
+  c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(39): note: while trying to match the argument list '(std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>, overloaded-function)'
+c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(44): error C3867: 'std::vector<Player,std::allocator<_Ty>>::begin': non-standard syntax; use '&' to create a pointer to member
+          with
+          [
+              _Ty=Player
+          ]
+c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(44): error C2679: binary '=': no operator found which takes a right-hand operand of type 'overloaded-function' (or there is no acceptable conversion)
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(397): note: could be 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>::operator =(std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &&)'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(397): note: or       'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>::operator =(const std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &)'
+  c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(44): note: while trying to match the argument list '(std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>, overloaded-function)'
+c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(53): error C3867: 'std::vector<Player,std::allocator<_Ty>>::begin': non-standard syntax; use '&' to create a pointer to member
+          with
+          [
+              _Ty=Player
+          ]
+c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(53): error C2679: binary '=': no operator found which takes a right-hand operand of type 'overloaded-function' (or there is no acceptable conversion)
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(397): note: could be 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>::operator =(std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &&)'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(397): note: or       'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>::operator =(const std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &)'
+  c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(53): note: while trying to match the argument list '(std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>, overloaded-function)'
+c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(75): error C3867: 'std::vector<Player,std::allocator<_Ty>>::begin': non-standard syntax; use '&' to create a pointer to member
+          with
+          [
+              _Ty=Player
+          ]
+c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(75): error C2679: binary '=': no operator found which takes a right-hand operand of type 'overloaded-function' (or there is no acceptable conversion)
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(397): note: could be 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>::operator =(std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &&)'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(397): note: or       'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>::operator =(const std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>> &)'
+  c:\users\chapkailo\documents\github\blackjack\blackjack\blackjack\game.cpp(75): note: while trying to match the argument list '(std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Player>>>, overloaded-function)'
+  Deck.cpp
+  Generating Code...

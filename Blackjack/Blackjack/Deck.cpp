@@ -51,6 +51,6 @@ void Deck::AdditionalCards(GenericPlayer& aGenericPlayer)
 		Deal(aGenericPlayer);
 		cout << aGenericPlayer << endl;
 		if (aGenericPlayer.IsBusted())
-			aGenericPlayer.Bust;
+			aGenericPlayer.Bust();
 	}
 }

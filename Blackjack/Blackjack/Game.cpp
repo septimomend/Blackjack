@@ -10,7 +10,7 @@ Game::Game(const vector<string>& names)
 	// create vector of players from vector of names. Create Player object for each name
 	//
 	for (pName = names.begin(); pName != names.end(); ++pName)
-		m_Player.push_back(Player(*pName));
+		m_Players.push_back(Player(*pName));
 	// random generator
 	//
 	srand(static_cast<unsigned int>(time(0)));
@@ -29,19 +29,19 @@ void Game::Play()
 	//
 	for (int i = 0; i < 2; ++i)
 	{
-		for (pPlayer = m_Player.begin; pPlayer != m_Player.end(); ++pPlayer)
+		for (pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer)
 			m_Deck.Deal(*pPlayer);
 		m_Deck.Deal(m_House);
 	}
 	m_House.FlipFirstCard(); // hide first diller's card
 	// open all player's hands
 	//
-	for (pPlayer = m_Player.begin; pPlayer != m_Player.end(); ++pPlayer)
+	for (pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer)
 		cout << *pPlayer << endl;
 	cout << m_House << endl;
 	// deal additional cards for players
 	//
-	for (pPlayer = m_Player.begin; pPlayer != m_Player.end(); ++pPlayer)
+	for (pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer)
 		m_Deck.AdditionalCards(*pPlayer);
 	m_House.FlipFirstCard(); // show diller's first card
 	cout << endl << m_House;
@@ -50,7 +50,7 @@ void Game::Play()
 	{
 		// all players remained at game are winners
 		//
-		for (pPlayer = m_Player.begin; pPlayer != m_Player.end(); ++pPlayer)
+		for (pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer)
 		{
 			if (!(pPlayer->IsBusted()))
 				pPlayer->Win();
@@ -72,7 +72,7 @@ void Game::Play()
 	}
 	// clear all player's hands
 	//
-	for (pPlayer = m_Player.begin; pPlayer != m_Player.end(); ++pPlayer)
+	for (pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer)
 		pPlayer->Clear();
 	m_House.Clear();
 }
