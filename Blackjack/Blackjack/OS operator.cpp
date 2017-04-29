@@ -12,13 +12,13 @@ ostream& operator<<(ostream& os, const Card& aCard)
 	if (aCard.m_IsFaceUp)
 		os << RANKS[aCard.m_Rank] << SUIT[aCard.m_Suit];
 	else
-		os << "XX";
+		os << "\17\17";
 	return os;
 }
 
 ostream& operator<<(ostream& os, const GenericPlayer& aGenericPlayer)
 {
-	os << aGenericPlayer.m_Name << ":\t";
+	os << aGenericPlayer.m_Name << ":\t\t";
 	vector<Card*>::const_iterator pCard;
 	if (!aGenericPlayer.m_Cards.empty())
 	{

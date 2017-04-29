@@ -30,9 +30,10 @@ int main()
 	int numPlayers = 0;
 	while (numPlayers < 1 || numPlayers > 7)
 	{
-		cout << "How many players? (1-7) - ";
+		cout << "\nHow many players? (1-7) - ";
 		cin >> numPlayers;
 	}
+	system("cls");
 	vector<string> names;
 	string name;
 	int number = 1;
