@@ -14,7 +14,7 @@ Player::~Player()
 
 bool Player::IsHitting() const
 {
-	cout << m_Name << ", do you want a hit? Press <Shift>+<Y>/<N>" << endl;
+	cout << m_Name << ", do you want a hit? Press <Y>/<N>" << endl;
 	/*char response;
 	cin >> response;
 	return (response == 'y' || response == 'Y'); // if player wants to hit and press 'y' or 'Y' return true, else return false*/

@@ -12,36 +12,49 @@ ostream& operator<<(ostream& os, const GenericPlayer& aGenericPlayer);
 
 int main()
 {
-	cout << "\t\t\3\4 Blackjack Console Game \5\6\n" << endl;
-	cout << "For reading rules press <Shift>+<E>" << endl;
-	ifstream readme("rules.txt");
-	string ruleStr;
-	switch (_getch())
+	bool introduce = true;
+	while (introduce)
 	{
-	case E:
-		while (readme)
+		system("cls");
+		cout << "Warning! \nBefore clicking proposed by game keys, please, enable CapsLock." << endl;
+		cout << "\nFor reading rules press <E>" << endl;
+		cout << "\nOr press any key to play game." << endl;
+		ifstream readme("rules.txt");
+		string ruleStr;
+		switch (_getch())
 		{
-			readme >> ruleStr;
-			cout << ruleStr << " ";
+		case E:
+			system("cls");
+			while (readme)
+			{
+				readme >> ruleStr;
+				cout << ruleStr << " ";
+			}
+			cout << endl;
+			cout << "\nPress any key to return back." << endl;
+			_getch();
+			break;
+		default:
+			introduce = false;
+			system("cls");
+			break;
 		}
-		cout << endl;
-		break;
-	default:
-		break;
 	}
 	int numPlayers = 0;
+	cout << "\t\t\3\4 Blackjack Console Game \5\6\n" << endl;
+	cout << "Welcome to my virtual casino, ladies and gentlemen. Now we play Blackjack. Join us!\n" << endl;
 	while (numPlayers < 1 || numPlayers > 7)
 	{
-		cout << "\nHow many players? (1-7) - ";
+		cout << "\nHow many of you are there? There are only 7 places, sorry if someone is missing. (1-7) - ";
 		cin >> numPlayers;
 	}
-	system("cls");
 	vector<string> names;
 	string name;
 	int number = 1;
+	cout << endl;
 	for (int i = 0; i < numPlayers; ++i)
 	{
-		cout << "Enter player's name #" << number << ": ";
+		cout << "So, player num. " << number << ", introduce yourself, please: ";
 		cin >> name;
 		names.push_back(name);
 		number++;
@@ -56,7 +69,7 @@ int main()
 	aGame.Play();
 	while (again)
 	{
-		cout << "\nPlay again? Press <Shift>+<Y>/<N>" << endl;
+		cout << "\nPlay again? Press <Y>/<N>" << endl;
 		switch (_getch())
 		{
 		case Y:
@@ -67,7 +80,7 @@ int main()
 			break;
 		case N:
 			again = false;
-			cout << "\nAdieu!" << endl;
+			cout << "\nGood luck, ladies and gentlemen!" << endl;
 			break;
 		}
 	}
