@@ -39,7 +39,7 @@ int main()
 	int number = 1;
 	for (int i = 0; i < numPlayers; ++i)
 	{
-		cout << "Enter player number " << number << " name: ";
+		cout << "Enter player's name #" << number << ": ";
 		cin >> name;
 		names.push_back(name);
 		number++;

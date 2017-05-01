@@ -33,7 +33,7 @@ void Game::Play()
 			m_Deck.Deal(*pPlayer);
 		m_Deck.Deal(m_House);
 	}
-	m_House.FlipFirstCard(); // hide first diller's card
+	m_House.FlipFirstCard(); // hide first dealer's card
 	// open all player's hands
 	//
 	for (pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer)
@@ -48,9 +48,9 @@ void Game::Play()
 	cout << "\nTable now:" << endl;
 	for (pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer)
 		cout << *pPlayer << endl;
-	m_House.FlipFirstCard(); // show diller's first card
+	m_House.FlipFirstCard(); // show dealer's first card
 	cout << endl << m_House;
-	m_Deck.AdditionalCards(m_House); // deal additional cards for diller
+	m_Deck.AdditionalCards(m_House); // deal additional cards for dealer
 	cout << endl;
 	if (m_House.IsBusted())
 	{
@@ -64,7 +64,7 @@ void Game::Play()
 	}
 	else
 	{
-		// compare sum of remaining player's scores and sum of diller's scores
+		// compare sum of remaining player's scores and sum of dealer's scores
 		//
 		for (pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer)
 		{

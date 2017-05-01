@@ -1,5 +1,5 @@
-// House.h >> declatration of class House inherited from class GenericPlayer (GenericPlayer.h/.cpp)
-// class House represents diller (casino, computer-player).
+// House.h >> declaration of class House inherited from class GenericPlayer (GenericPlayer.h/.cpp)
+// class House represents dealer (casino, computer-player).
 #ifndef HOUSE_H
 #define HOUSE_H
 #include "stdafx.h"

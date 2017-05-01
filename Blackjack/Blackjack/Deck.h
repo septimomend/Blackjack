@@ -1,4 +1,4 @@
-// Deck.h >> definition of class Deck, representing deck of cards.
+// Deck.h >> declaration of class Deck, representing deck of cards.
 // Inherited from class Hand placed in Hand.h/.cpp files
 #ifndef DECK_H
 #define DECK_H

@@ -1,4 +1,4 @@
-// Hand.cpp >> declaration of class Hand
+// Hand.cpp >> definition of class Hand
 #include "stdafx.h"
 #include "Hand.h"
 

@@ -1,4 +1,4 @@
-// GenericPlayer.h >> definition of class GenericPlayer. 
+// GenericPlayer.h >> declaration of class GenericPlayer. 
 // This abstract class that represent common elements of human-player and computer-player
 #ifndef GENERICPLAYER_H
 #define GENERICPLAYER_H
