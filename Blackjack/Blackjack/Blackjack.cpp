@@ -4,7 +4,7 @@
 #include "stdafx.h"
 #include <fstream>
 #include "Game.h"
-
+#define E 69
 using namespace std;
 
 ostream& operator<<(ostream& os, const Card& aCard);
@@ -13,19 +13,21 @@ ostream& operator<<(ostream& os, const GenericPlayer& aGenericPlayer);
 int main()
 {
 	cout << "\t\t\3\4 Blackjack Console Game \5\6\n" << endl;
-	cout << "For reading rules press 'r' else press any other button: ";
-	char rules;
-	cin >> rules;
-	if (rules == 'r')
+	cout << "For reading rules press <Shift>+<E>" << endl;
+	ifstream readme("rules.txt");
+	string ruleStr;
+	switch (_getch())
 	{
-		ifstream readme("rules.txt");
-		string ruleStr;
+	case E:
 		while (readme)
 		{
 			readme >> ruleStr;
 			cout << ruleStr << " ";
 		}
 		cout << endl;
+		break;
+	default:
+		break;
 	}
 	int numPlayers = 0;
 	while (numPlayers < 1 || numPlayers > 7)
@@ -48,16 +50,27 @@ int main()
 	// cycle of game
 	//
 	Game aGame(names);
-	char again = 'y';
-	while (again != 'n' && again != 'N')
+	bool again = true;
+	system("cls");
+	cout << "\t\t\3\4 Blackjack Console Game \5\6\n" << endl;
+	aGame.Play();
+	while (again)
 	{
-		system("cls");
-		cout << "\t\t\3\4 Blackjack Console Game \5\6\n" << endl;
-		aGame.Play();
-		cout << "\nDo you want to play again? (Y/N): ";
-		cin >> again;
+		cout << "\nPlay again? Press <Shift>+<Y>/<N>" << endl;
+		switch (_getch())
+		{
+		case Y:
+			system("cls");
+			cout << "\t\t\3\4 Blackjack Console Game \5\6\n" << endl;
+			aGame.Play();
+			again = true;
+			break;
+		case N:
+			again = false;
+			cout << "\nAdieu!" << endl;
+			break;
+		}
 	}
-	cout << "Adieu!" << endl;
     return 0;
 }
 

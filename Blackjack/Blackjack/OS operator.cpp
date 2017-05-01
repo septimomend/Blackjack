@@ -12,7 +12,7 @@ ostream& operator<<(ostream& os, const Card& aCard)
 	if (aCard.m_IsFaceUp)
 		os << RANKS[aCard.m_Rank] << SUIT[aCard.m_Suit];
 	else
-		os << "\17\17";
+		os << (char)178 << (char)178;
 	return os;
 }
 

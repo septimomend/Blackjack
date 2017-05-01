@@ -12,7 +12,14 @@
 #include <algorithm>
 #include <vector>
 #include <ctime>
+#include <Windows.h>
+#include <conio.h>
 
+#define ESC 27
+//#define E 69
+#define R 82
+#define Y 89
+#define N 78
 
 
 // TODO: reference additional headers your program requires here
