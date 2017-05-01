@@ -42,10 +42,16 @@ void Game::Play()
 	// deal additional cards for players
 	//
 	for (pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer)
+	{
 		m_Deck.AdditionalCards(*pPlayer);
+	}
+	cout << "\nTable now:" << endl;
+	for (pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer)
+		cout << *pPlayer << endl;
 	m_House.FlipFirstCard(); // show diller's first card
 	cout << endl << m_House;
 	m_Deck.AdditionalCards(m_House); // deal additional cards for diller
+	cout << endl;
 	if (m_House.IsBusted())
 	{
 		// all players remained at game are winners
@@ -60,14 +66,17 @@ void Game::Play()
 	{
 		// compare sum of remaining player's scores and sum of diller's scores
 		//
-		if (!(pPlayer->IsBusted()))
+		for (pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer)
 		{
-			if (pPlayer->GetTotal() > m_House.GetTotal())
-				pPlayer->Win();
-			if (pPlayer->GetTotal() < m_House.GetTotal())
-				pPlayer->Lose();
-			if (pPlayer->GetTotal() == m_House.GetTotal())
-				pPlayer->Push();
+			if (!(pPlayer->IsBusted()))
+			{
+				if (pPlayer->GetTotal() > m_House.GetTotal())
+					pPlayer->Win();
+				else if (pPlayer->GetTotal() < m_House.GetTotal())
+					pPlayer->Lose();
+				else
+					pPlayer->Push();
+			}
 		}
 	}
 	// clear all player's hands

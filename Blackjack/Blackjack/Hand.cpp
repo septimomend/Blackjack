@@ -24,7 +24,7 @@ void Hand::Clear()
 	vector<Card*>::iterator iter = m_Cards.begin();
 	// pass all vector and delete memory on heap
 	//
-	for (; iter != m_Cards.end(); ++iter)
+	for (iter = m_Cards.begin(); iter != m_Cards.end(); ++iter)
 	{
 		delete *iter;
 		*iter = 0;

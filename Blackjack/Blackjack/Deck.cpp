@@ -38,7 +38,14 @@ void Deck::Deal(Hand& aHand)
 		m_Cards.pop_back(); // and delete this pointer
 	}
 	else
+	{
 		cout << "> Deal(): Out of cards. Unable to deal." << endl;
+		cout << "Generating new deck..." << endl;
+		Deck::Generate();
+		cout << "Generated. Shuffling..." << endl;
+		Deck::Shuffle();
+		cout << "Shuffled." << endl;
+	}
 }
 
 void Deck::AdditionalCards(GenericPlayer& aGenericPlayer)

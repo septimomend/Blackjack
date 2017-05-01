@@ -52,11 +52,12 @@ int main()
 	while (again != 'n' && again != 'N')
 	{
 		system("cls");
+		cout << "\t\t\3\4 Blackjack Console Game \5\6\n" << endl;
 		aGame.Play();
 		cout << "\nDo you want to play again? (Y/N): ";
 		cin >> again;
 	}
-	cout << "Good luck!" << endl;
+	cout << "Adieu!" << endl;
     return 0;
 }
 
