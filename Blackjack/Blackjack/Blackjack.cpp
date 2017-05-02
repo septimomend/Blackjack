@@ -16,6 +16,7 @@ int main()
 	while (introduce)
 	{
 		system("cls");
+		cout << "\t\t\3\4 Blackjack Console Game \5\6\t\t\t\t\tby I. Chapkailo\n" << endl;
 		cout << "Warning! \nBefore clicking proposed by game keys, please, enable CapsLock." << endl;
 		cout << "\nFor reading rules press <E>" << endl;
 		cout << "\nOr press any key to play game." << endl;
@@ -41,7 +42,7 @@ int main()
 		}
 	}
 	int numPlayers = 0;
-	cout << "\t\t\3\4 Blackjack Console Game \5\6\n" << endl;
+	cout << "\t\t\3\4 Blackjack Console Game \5\6\t\t\t\t\tby I. Chapkailo\n" << endl;
 	cout << "Welcome to my virtual casino, ladies and gentlemen. Now we play Blackjack. Join us!\n" << endl;
 	while (numPlayers < 1 || numPlayers > 7)
 	{
@@ -65,7 +66,7 @@ int main()
 	Game aGame(names);
 	bool again = true;
 	system("cls");
-	cout << "\t\t\3\4 Blackjack Console Game \5\6\n" << endl;
+	cout << "\t\t\3\4 Blackjack Console Game \5\6\t\t\t\t\tby I. Chapkailo\n" << endl;
 	aGame.Play();
 	while (again)
 	{
@@ -74,7 +75,7 @@ int main()
 		{
 		case Y:
 			system("cls");
-			cout << "\t\t\3\4 Blackjack Console Game \5\6\n" << endl;
+			cout << "\t\t\3\4 Blackjack Console Game \5\6\t\t\t\t\tby I. Chapkailo\n" << endl;
 			aGame.Play();
 			again = true;
 			break;
