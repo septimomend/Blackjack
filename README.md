@@ -8,4 +8,6 @@ to gain additional cards, the dealer reveals the hidden card. Further he is obli
 If the dealer goes bust, all players who have not bust win. Otherwise, the sum of points for each of the remaining players is compared to the amount of points the dealer. If the total score of the player is greater than the sum of dealer's points, he wins. Otherwise, the player loses. If the amount of points the player and dealer are equal, a draw is counted (this is called a push).
 ***
 Screenshot:  
-![](https://s8.hostingkartinok.com/uploads/images/2017/05/f4578f7f40989b85dfc34fc4e9f20884.png "Screenshot of game")
+![](https://s8.hostingkartinok.com/uploads/images/2017/05/f4578f7f40989b85dfc34fc4e9f20884.png "Screenshot of game")  
+***
+**Before game, please, enable CapsLock key and True Type font in console for right representation of game.**
